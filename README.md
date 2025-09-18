@@ -1,4 +1,4 @@
-# 🎬 Alura Plus (Clone)
+# 🎬 Alura Plus 
 
 Página estática inspirada no **Alura Plus**.
 O projeto foi desenvolvido como prática no curso da **Alura**.
