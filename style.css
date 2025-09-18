@@ -1,0 +1,375 @@
+:root {
+    /* Colors */
+    --bg: #00030C;
+    --btn-brand: #167BF7;
+    --gray: #C0C0C0;
+    --text: #F9F9F9;
+    --white: #fff;
+
+    /* font-family */
+    --font-family-base: "inter", sans-serif;
+    --font-size-base: 16px;
+    --font-size-sm: 12px;
+    --font-size-medium: 16px;
+    --font-size-lg: 28px;
+    --font-size-xl: 32px; 
+    --font-size-xll: 48px; 
+}
+
+/* codigo */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color:var(--white);
+    background-color: var(--bg);
+}
+
+.principal {
+    background-image: url(assets/images/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 64px;
+    padding-top: 250px;
+}
+
+.container__hero {
+    width: 588px;
+    height: 431px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.container__hero h1 {
+    color: var(--white);
+    font-family: var(--font-family-base);
+    text-align: center;
+    font-size: var(--font-size-lg);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cta-button {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cta-button a {
+    color: var(--white);
+    text-align: center;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-decoration: none;
+} 
+
+.cta-button a:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease; 
+}
+
+.aluracombo {
+    width: 512px;
+    border-radius: 8px;
+    background: var(--btn-brand);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aluraplus {
+    width: 512px;
+    border-radius: 8px;
+    border: 1px solid var(--white);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__hero p {
+    color: var(--gray);
+    text-align: center;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-sm);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container__plataforms {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 180px;
+}
+
+.container__plataforms img:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+}
+
+.plataforms-itens {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+}
+
+.plataforms-text {
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 160px;
+}
+
+.plataforms-text h3 {
+    color: var(--white);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-xll);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+}
+
+.plataforms-text p {
+    color: var(--text);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    opacity: 0.6;
+}
+
+.container__screams {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container__screams img:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+}
+
+.screams-itens {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    margin-bottom: 220px;
+}
+
+.screams-text{
+    width: 588px;
+}
+
+.screams-text p {
+    color: var(--text);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    opacity: .6;
+    margin-bottom: 32px;
+}
+
+.screams-text a {
+    display: flex;
+    width: 180px;
+    background: var(--btn-brand);
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    gap: 16px;
+    border-radius: 8px;
+
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.screams-text a:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease; 
+}
+
+.container__cursos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 220px;
+}
+
+.container__cursos img:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+}
+
+.cursos-itens {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.cursos-itens h3 {
+    color: var(--white);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-xll);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+}
+
+.container__dispositivos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.container__dispositivos h3 {
+    color: var(--white);
+    text-align: center;
+    font-family:var(--font-family-base);
+    font-size: var(--font-size-xll);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.dispositivos--itens {
+    display: flex;
+    gap: 120px;
+}
+
+.dispositivos--itens p {
+    color: var(--white);
+    text-align: center;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; 
+}
+
+.dispositivos-tv {
+    width: 340px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+}
+
+.dispositivos-tv i{
+    font-size: 120px;
+}
+
+.dispositivos-tv:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+}
+
+.dispositivos-computador {
+    width: 340px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+}
+
+.dispositivos-computador i{
+    font-size: 120px;
+}
+
+.dispositivos-computador:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+}
+
+.dispositivos-celular {
+    width: 340px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+}
+
+.dispositivos-celular i{
+    font-size: 120px;
+}
+
+.dispositivos-celular:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+}
+
+.container__footer {
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.footer-links {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+
+    color: var(--white);
+    text-align: center;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom:  32px;
+}
+
+.footer-text {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: var(--gray);
+    font-family: var(--font-family-base);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
