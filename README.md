@@ -21,4 +21,4 @@ O projeto foi desenvolvido como prática no curso da **Alura**.
 ![preview do site](assets/images/preview.png)
 
 ## 🌐 Acesse o projeto
-👉 [Clique aqui para ver no GitHub Pages](https://thailanjesus.github.io/AluraPlus/)
+👉 https://thailanjesus.github.io/AluraPlus/
